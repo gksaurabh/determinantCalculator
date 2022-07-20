@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<head>
+    <title>Determinant Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<h1>Welcome to the Determinant Calculator</h1>
+<p>This website can be used to find the determinant of a matrix using cofactor expansion method.</p>
+
+<div class="setMatrixFrame">
+    <form class="setVariable">
+        Matrix Dimension:
+        <input id="n-dimension" title="n" type="number" patter="[0-9]*" min="2" max="10" step="1">
+        <input type="button" name="submitButton" id="setMatrixButton" value="Set matrix" >
+    </form>
+</div>
+
+<div class="center">
+    <div class="tableSpace">
+        <table id="matrixTable">
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+
+<div class="testPrint" id="testPrint"></div>
+
+<script src="algorithms.js"></script>
+</body>
+
+</html>
